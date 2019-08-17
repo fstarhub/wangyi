@@ -6,15 +6,71 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <link rel="stylesheet" href="./css/reset.css">
-    <title>wangyi</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1356758_ngc4v19ypv.css">
+    <title>网易严选项目</title>
   </head>
   <body>
     <noscript>
       <strong>We're sorry but wangyi doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
     <div id="app">
-      
+      <div class="container">
+        <!-- 头部 -->
+        <div class="header">
+          <nav class="navigation">
+            <a href="https://m.you.163.com/" class="logo">网易严选</a>
+            <div class="searchButton">
+              <i class="iconfont icon-iconset0157"></i>
+              <span class="placeholder">搜索商品,共21615款好物</span>
+            </div>
+            <div class="loginBtn">登录</div>
+          </nav>
+          <ul class="tabContainer">
+            <li class="tabList actived">推荐</li>
+            <li class="tabList">居家生活</li>
+            <li class="tabList">服饰鞋包</li>
+            <li class="tabList">美食酒水</li>
+            <li class="tabList iconfont icon-fangxiang-xiangxia"></li>
+          </ul>
+        </div>
+        <!-- 中间部分 -->
+        <div class="contentContainer">
+          <div class="figures">
+            轮播图
+          </div>
+          <div class="contentDetail">
+            <div class="titleContent">
+              <ul class="titleDetail">
+                <li class="title"><i class="iconfont icon-pinpai"></i>网易自营品牌</li>
+                <li class="title"><i class="iconfont icon-tuikuan"></i>30天内无忧退货</li>
+                <li class="title"><i class="iconfont icon-womenchengnuo"></i>48小时快速退款</li>
+              </ul>
+            </div>
+            <ul class="detailList">
+              <a class="contentList" href="javescript:;"><img src="./images/1.gif" alt=""><span>新品首发</span></a>
+              <a class="contentList" href="javescript:;"><img src="./images/2.png" alt=""><span>家具生活</span></a>
+              <a class="contentList" href="javescript:;"><img src="./images/3.png" alt=""><span>服饰鞋包</span></a>
+              <a class="contentList" href="javescript:;"><img src="./images/4.png" alt=""><span>美食酒水</span></a>
+              <a class="contentList" href="javescript:;"><img src="./images/5.png" alt=""><span>个护清洁</span></a>
+              <a class="contentList" href="javescript:;"><img src="./images/6.png" alt=""><span>母婴亲自</span></a>
+              <a class="contentList" href="javescript:;"><img src="./images/7.png" alt=""><span>运动旅行</span></a>
+              <a class="contentList" href="javescript:;"><img src="./images/8.png" alt=""><span>数码加点</span></a>
+              <a class="contentList" href="javescript:;"><img src="./images/9.png" alt=""><span>全球特色</span></a>
+              <a class="contentList" href="javescript:;"><img src="./images/10.gif" alt=""><span>超级会员</span></a>
+            </ul>
+          </div>
+        </div>
+        <!-- 底部 -->
+        <div class="footer">
+          <div class="home"><i class="iconfont icon-icon-test"></i>首页</div>
+          <div class="sort"><i class="iconfont icon-fenlei2"></i>分类</div>
+          <div class="things"><i class="iconfont icon-icon-goods"></i>识物</div>
+          <div class="shopping"><i class="iconfont icon-gouwuche"></i>购物车</div>
+          <div class="personal"><i class="iconfont icon-gerenziliao"></i>个人</div>
+        </div>
+      </div>
     </div>
-    
+    <!-- <script src="js/rem.js"></script> -->
   </body>
 </html>

@@ -1,0 +1,164 @@
+@import './reset.css';
+@media only screen and (-webkit-device-pixel-ratio: 2) {
+  .border-1px::before {
+    transform: scaleY(0.5);
+  }
+}
+@media only screen and (-webkit-device-pixel-ratio: 3) {
+  .border-1px::before {
+    transform: scaleY(0.333333);
+  }
+}
+#app {
+  height: 100%;
+  width: 100%;
+}
+.container {
+  height: 100%;
+  width: 100%;
+}
+.container .header {
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  background: #fff;
+}
+.container .header .navigation {
+  display: flex;
+  height: 35px;
+  justify-content: space-around;
+  align-items: center;
+}
+.container .header .navigation .logo {
+  display: block;
+  color: #000;
+  font-weight: bold;
+  width: 65px;
+}
+.container .header .navigation .searchButton {
+  background: #ededed;
+  padding: 6px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.container .header .navigation .loginBtn {
+  font-size: 14px;
+  color: #f00;
+  border-radius: 3px;
+  border: 1px solid #f00;
+  padding: 4px;
+}
+.container .header .tabContainer {
+  height: 35px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 16px;
+}
+.container .header .tabContainer .tabList {
+  height: 35px;
+  line-height: 35px;
+  padding: 0 10px;
+}
+.container .header .tabContainer .tabList.actived {
+  border-bottom: 3px solid #f00;
+}
+.container .contentContainer {
+  width: 100%;
+  height: 100%;
+  padding-top: 70px;
+}
+.container .contentContainer .figures {
+  height: 180px;
+  width: 100%;
+}
+.container .contentContainer .contentDetail {
+  height: 150px;
+  width: 100%;
+}
+.container .contentContainer .contentDetail .titleContent {
+  width: 100%;
+  height: 30px;
+}
+.container .contentContainer .contentDetail .titleContent .titleDetail {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+.container .contentContainer .contentDetail .titleContent .titleDetail .title {
+  padding: 6px;
+  font-size: 14px;
+}
+.container .contentContainer .contentDetail .detailList {
+  height: 180px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .contentContainer .contentDetail .detailList .contentList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .contentContainer .contentDetail .detailList img {
+  width: 75px;
+  height: 70px;
+}
+.container .contentContainer .contentDetail .detailList span {
+  font-size: 14px;
+}
+.container .footer {
+  height: 50px;
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+}
+.container .footer .home {
+  align-items: center;
+  flex-grow: 2.4;
+  display: flex;
+  flex-direction: column;
+}
+.container .footer .home .iconfont {
+  font-size: 30px;
+}
+.container .footer .sort {
+  align-items: center;
+  flex-grow: 2.4;
+  display: flex;
+  flex-direction: column;
+}
+.container .footer .sort .iconfont {
+  font-size: 30px;
+}
+.container .footer .things {
+  align-items: center;
+  flex-grow: 2.4;
+  display: flex;
+  flex-direction: column;
+}
+.container .footer .things .iconfont {
+  font-size: 30px;
+}
+.container .footer .shopping {
+  align-items: center;
+  flex-grow: 2.4;
+  display: flex;
+  flex-direction: column;
+}
+.container .footer .shopping .iconfont {
+  font-size: 30px;
+}
+.container .footer .personal {
+  align-items: center;
+  flex-grow: 2.4;
+  display: flex;
+  flex-direction: column;
+}
+.container .footer .personal .iconfont {
+  font-size: 30px;
+}
