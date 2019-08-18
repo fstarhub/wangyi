@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_1356758_ngc4v19ypv.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
     <title>网易严选项目</title>
   </head>
   <body>
@@ -37,7 +38,16 @@
         <!-- 中间部分 -->
         <div class="contentContainer">
           <div class="figures">
-            轮播图
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="./images/lunbo/1.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./images/lunbo/2.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./images/lunbo/3.jpg" alt=""></div>
+              </div>
+              <!-- 如果需要分页器 -->
+              <div class="swiper-pagination"></div>
+                                   
+          </div>
           </div>
           <div class="contentDetail">
             <div class="titleContent">
@@ -59,6 +69,40 @@
               <a class="contentList" href="javescript:;"><img src="./images/9.png" alt=""><span>全球特色</span></a>
               <a class="contentList" href="javescript:;"><img src="./images/10.gif" alt=""><span>超级会员</span></a>
             </ul>
+            <div class="newBoyTab">
+              <div class="newBoy">-新人专享礼-</div>
+              <div class="newGift">
+                <div class="hongbaoTab">
+                    <a href="javascript:;" class="hongbao">新人专享礼包
+                      <img src="./images/hongbao.png" alt="">
+                    </a>
+                </div>
+                <div class="fuli">
+                  <div class="fulishe">
+                    <a href="javascript:;">福利社
+                      <img src="./images/fulishe.png" alt="">
+                    </a>
+                  </div>
+                  <div class="pingtuan">
+                    <a href="javascript:;">新人拼团
+                      <img src="./images/pingtuan.png" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="brand">
+              <div class="brandMake">
+                <span>品牌制作商直供</span>
+                <a>更多></a>
+              </div>
+              <ul class="brandList">
+                <li class="brandItem"><a href="javascript:;"><img src="./images/2.png" alt=""></a></li>
+                <li class="brandItem"><a href="javascript:;"><img src="./images/2.png" alt=""></a></li>
+                <li class="brandItem"><a href="javascript:;"><img src="./images/2.png" alt=""></a></li>
+                <li class="brandItem"><a href="javascript:;"><img src="./images/2.png" alt=""></a></li>
+              </ul>
+            </div>
           </div>
         </div>
         <!-- 底部 -->
@@ -72,5 +116,23 @@
       </div>
     </div>
     <!-- <script src="js/rem.js"></script> -->
+    <script src="./js/swiper.min.js"></script>
+    <script>        
+      var mySwiper = new Swiper ('.swiper-container', {
+        direction: 'horizontal', // 垂直切换选项
+        loop: true, // 循环模式选项
+        
+        // 如果需要分页器
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        
+        
+        // 如果需要滚动条
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      })        
+      </script>
   </body>
 </html>

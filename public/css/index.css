@@ -22,6 +22,7 @@
   width: 100%;
   position: fixed;
   background: #fff;
+  z-index: 4;
 }
 .container .header .navigation {
   display: flex;
@@ -71,10 +72,13 @@
 }
 .container .contentContainer .figures {
   height: 180px;
+}
+.container .contentContainer .figures .swiper-container {
   width: 100%;
+  height: 180px;
 }
 .container .contentContainer .contentDetail {
-  height: 150px;
+  height: 900px;
   width: 100%;
 }
 .container .contentContainer .contentDetail .titleContent {
@@ -106,6 +110,97 @@
 }
 .container .contentContainer .contentDetail .detailList span {
   font-size: 14px;
+}
+.container .contentContainer .contentDetail .newBoyTab {
+  height: 200px;
+  width: 100%;
+}
+.container .contentContainer .contentDetail .newBoyTab .newBoy {
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+.container .contentContainer .contentDetail .newBoyTab .newGift {
+  height: 160px;
+  display: flex;
+}
+.container .contentContainer .contentDetail .newBoyTab .newGift .hongbaoTab {
+  position: relative;
+  width: 50%;
+  background: #f9e9cf;
+  margin: 0 0 0 10px;
+  padding: 15px 0 0 15px;
+  font-weight: bold;
+}
+.container .contentContainer .contentDetail .newBoyTab .newGift .hongbaoTab img {
+  position: absolute;
+  top: 35px;
+  left: 38px;
+  width: 100px;
+  height: 120px;
+}
+.container .contentContainer .contentDetail .newBoyTab .newGift .fuli {
+  width: 50%;
+  margin: 0 10px 0 5px;
+}
+.container .contentContainer .contentDetail .newBoyTab .newGift .fuli .fulishe {
+  position: relative;
+  height: 80px;
+  background: #fbe2d3;
+  margin: 0 0 5px 0;
+}
+.container .contentContainer .contentDetail .newBoyTab .newGift .fuli .fulishe a {
+  display: block;
+  padding: 8px 0 0 8px;
+}
+.container .contentContainer .contentDetail .newBoyTab .newGift .fuli .fulishe img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100px;
+  height: 80px;
+}
+.container .contentContainer .contentDetail .newBoyTab .newGift .fuli .pingtuan {
+  background: #ffecc2;
+  height: 75px;
+  position: relative;
+}
+.container .contentContainer .contentDetail .newBoyTab .newGift .fuli .pingtuan a {
+  display: block;
+  padding: 8px 0 0 8px;
+}
+.container .contentContainer .contentDetail .newBoyTab .newGift .fuli .pingtuan a img {
+  width: 100px;
+  height: 80px;
+  position: absolute;
+}
+.container .contentContainer .contentDetail .brand {
+  height: 400px;
+  width: 100%;
+}
+.container .contentContainer .contentDetail .brand .brandMake {
+  height: 15px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.container .contentContainer .contentDetail .brand .brandList {
+  height: 280px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.container .contentContainer .contentDetail .brand .brandList .brandItem {
+  height: 140px;
+  width: 140px;
+  margin-left: 20px;
+}
+.container .contentContainer .contentDetail .brand .brandList .brandItem a {
+  display: block;
+}
+.container .contentContainer .contentDetail .brand .brandList .brandItem a img {
+  width: 135px;
+  height: 126px;
 }
 .container .footer {
   height: 50px;
