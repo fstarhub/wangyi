@@ -10,13 +10,22 @@
         </div>
         <div class="loginBtn">登录</div>
       </nav>
-      <ul class="tabContainer">
-        <li class="tabList actived">推荐</li>
-        <li class="tabList">居家生活</li>
-        <li class="tabList">服饰鞋包</li>
-        <li class="tabList">美食酒水</li>
-        <li class="tabList iconfont icon-fangxiang-xiangxia"></li>
-      </ul>
+      <div class="tabContainer">
+        <div class="tabContent wrapper">
+          <ul class="tabList content">
+            <li class="tabItem tuijian actived">推荐</li>
+            <li class="tabItem">居家生活</li>
+            <li class="tabItem">服饰鞋包</li>
+            <li class="tabItem">美食美食</li>
+            <li class="tabItem">美食美食</li>       
+            <li class="tabItem">美食5</li>
+            <li class="tabItem">美食7</li>
+            <li class="tabItem">美食8</li>
+            <li class="tabItem">美食9</li>
+          </ul>
+        </div>
+        <div class="clickBtn"><i class="iconfont more icon-fangxiang-xiangxia"></i></div>
+      </div>
     </div>
     <!-- 中间部分 -->
     <div class="contentContainer">
@@ -93,14 +102,15 @@
 </template>
 
 <script type="text/ecmascript-6">
-  import Swiper from 'swiper'                
+  import Swiper from 'swiper'
+  import BScroll from 'better-scroll'              
       
   export default {
 
 
     mounted() {
       
-      var mySwiper = new Swiper ('.swiper-container', {
+      new Swiper ('.swiper-container', {
       direction: 'horizontal', // 垂直切换选项
       loop: true, // 循环模式选项
       
@@ -113,6 +123,11 @@
       scrollbar: {
         el: '.swiper-scrollbar',
       },
+    })
+
+    new BScroll('.wrapper',{
+      scrollX:true,
+      click:true
     })
     },
   }
@@ -154,17 +169,47 @@
     .tabContainer
       height 35px
       width 100%
-      display flex
-      justify-content space-around
-      align-items center
-      font-size 16px
-      .tabList
-        height 35px
-        line-height 35px
-        padding 0 10px
-        &.actived
-          border-bottom 3px solid red
-        
+      position relative 
+      .tabContent
+        width 300px
+        // display flex
+        // position relative
+        .tabList
+          width 650px        
+          display flex
+          // justify-content space-around
+          flex-wrap nowrap
+          align-items center
+          font-size 16px
+          overflow hidden
+          // white-space nowrap
+          // color red
+          .tabItem
+            flex-basis 40px 
+            white-space nowrap
+            height 35px      
+            line-height 35px
+            padding 0 10px
+          .tuijian
+            flex-basis 0
+            &.actived
+              border-bottom 3px solid red
+      .clickBtn
+        position absolute
+        right 0
+        bottom 0
+        height 100%
+        width 70px
+        background white
+        .more
+          height 40px
+          width 40px
+          display block
+          text-align center
+          margin-left 20px
+          line-height 40px
+          font-weight bold
+
       
   //中间部分
   .contentContainer
