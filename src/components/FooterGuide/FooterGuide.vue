@@ -1,18 +1,25 @@
 <template>
   <div class="footer">
-    <div @click="goTo('/msite')" class="home"><i class="iconfont icon-icon-test"></i>首页</div>
-    <div @click="goTo('/sort')" class="sort"><i class="iconfont icon-fenlei2"></i>分类</div>
-    <div @click="goTo('/find')" class="things"><i class="iconfont icon-icon-goods"></i>识物</div>
-    <div @click="goTo('/shop')" class="shopping"><i class="iconfont icon-gouwuche"></i>购物车</div>
-    <div @click="goTo('/personal')" class="personal"><i class="iconfont icon-gerenziliao"></i>个人</div>
+    <div @click.prevent="goTo('/msite')" class="home same" :class="{on: $route.path==='/msite'}"><i class="iconfont icon-icon-test"></i>首页</div>
+    <div @click.prevent="goTo('/sort')" class="sort same" :class="{on: $route.path==='/sort'}"><i class="iconfont icon-fenlei2"></i>分类</div>
+    <div @click.prevent="goTo('/find')" class="things same" :class="{on: $route.path==='/find'}"><i class="iconfont icon-icon-goods"></i>识物</div>
+    <div @click.prevent="goTo('/shop')" class="shopping same" :class="{on: $route.path==='/shop'}"><i class="iconfont icon-gouwuche"></i>购物车</div>
+    <div @click.prevent="goTo('/personal')" class="personal same" :class="{on: $route.path==='/personal'}"><i class="iconfont icon-gerenziliao"></i>个人</div>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
   export default {
 
+    data(){
+      return {
+       
+      }
+    },
+
     methods:{
       goTo(path){
+      
         this.$router.replace(path)
       }
     }
@@ -30,7 +37,7 @@
     display flex
     justify-content space-around
     // align-items center
-    .home
+    .same
       align-items center
       flex-grow 2.4
       display flex
@@ -38,37 +45,7 @@
       // background pink
       .iconfont
         font-size 30px
-    .sort
-      align-items center
-      flex-grow 2.4
-      // background purple
-      display flex
-      flex-direction column
-      .iconfont
-        font-size 30px
-    .things
-      align-items center
-      flex-grow 2.4
-      // background yellow
-      display flex
-      flex-direction column
-      .iconfont
-        font-size 30px
-    .shopping
-      align-items center
-      flex-grow 2.4
-      // background red
-      display flex
-      flex-direction column
-      .iconfont
-        font-size 30px
-    .personal
-      align-items center
-      flex-grow 2.4
-      // background blue
-      display flex
-      flex-direction column
-      .iconfont
-        font-size 30px
+      &.on
+        color blue
  
 </style>

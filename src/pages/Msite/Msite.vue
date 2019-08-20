@@ -3,12 +3,12 @@
     <!-- 头部 -->
     <div class="header">
       <nav class="navigation">
-        <a href="https://m.you.163.com/" class="logo">网易严选</a>
+        <i @click="$router.replace('/msite')" class="logo">网易严选</i>
         <div class="searchButton">
           <i class="iconfont icon-iconset0157"></i>
-          <span class="placeholder">搜索商品,共21615款好物</span>
+          <span @click="$router.push('/search')" class="placeholder">搜索商品,共21615款好物</span>
         </div>
-        <div class="loginBtn">登录</div>
+        <div @click="$router.replace('/personal')" class="loginBtn">登录</div>
       </nav>
       <div class="tabContainer">
         <div class="tabContent wrapper">
@@ -151,7 +151,7 @@
       .logo
         display block
         color black
-        font-weight bold
+        font-size 16px
         width 65px       
       .searchButton
         background #EDEDED

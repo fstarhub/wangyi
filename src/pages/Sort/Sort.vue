@@ -20,7 +20,25 @@
         
       </ul>     
       <div class="listDetail">
-        123431432431214123432214
+        <div class="listContainer">
+          <div class="ad">
+            <img src="https://yanxuan.nosdn.127.net/5b4ca33a0205482398006405c1db15e8.jpg?imageView&thumbnail=0x196" alt="">
+          </div>
+          <ul class="listContent">
+            <li class="life"><img src="https://yanxuan.nosdn.127.net/c117ea2f1c4d978eb1f310d6d9ec3226.png?imageView&quality=85&thumbnail=144x144" alt=""></li>
+            <li class="life"><img src="https://yanxuan.nosdn.127.net/c117ea2f1c4d978eb1f310d6d9ec3226.png?imageView&quality=85&thumbnail=144x144" alt=""></li>
+            <li class="life"><img src="https://yanxuan.nosdn.127.net/c117ea2f1c4d978eb1f310d6d9ec3226.png?imageView&quality=85&thumbnail=144x144" alt=""></li>
+            <li class="life"><img src="https://yanxuan.nosdn.127.net/c117ea2f1c4d978eb1f310d6d9ec3226.png?imageView&quality=85&thumbnail=144x144" alt=""></li>
+            <li class="life"><img src="https://yanxuan.nosdn.127.net/c117ea2f1c4d978eb1f310d6d9ec3226.png?imageView&quality=85&thumbnail=144x144" alt=""></li>
+            <li class="life"><img src="https://yanxuan.nosdn.127.net/c117ea2f1c4d978eb1f310d6d9ec3226.png?imageView&quality=85&thumbnail=144x144" alt=""></li>
+            <li class="life"><img src="https://yanxuan.nosdn.127.net/c117ea2f1c4d978eb1f310d6d9ec3226.png?imageView&quality=85&thumbnail=144x144" alt=""></li>
+            <li class="life"><img src="https://yanxuan.nosdn.127.net/c117ea2f1c4d978eb1f310d6d9ec3226.png?imageView&quality=85&thumbnail=144x144" alt=""></li>
+            <li class="life"><img src="https://yanxuan.nosdn.127.net/c117ea2f1c4d978eb1f310d6d9ec3226.png?imageView&quality=85&thumbnail=144x144" alt=""></li>
+            
+            
+          </ul>
+        </div>
+      
       </div>
     </div>
     
@@ -58,7 +76,7 @@
     .sortContent
       height 1000px
       width 100%
-      float left
+      // float left
       // background blue
       margin-top 40px
       .sortList
@@ -66,17 +84,36 @@
         display inline
         width 100px
         height 600px
-        background red
+        // background red
         display flex
         flex-direction column
         justify-content space-around
         align-items center
       .listDetail
-        width 100px
-        height 100px
-        background blue
+        width 273px
+        height 600px
+        // background blue
         float left
-        
-        
+        .listContainer
+          height 500px
+          width 100%
+          // background red
+          .ad
+            height 100px
+            width 100%
+            img
+              height 100px
+              width 100%
+          .listContent
+            width 100%
+            height 100%
+            display flex
+            flex-wrap wrap
+            align-content flex-start
+            .life
+              height 90px            
+            img
+              width 90px
+
 
 </style>
