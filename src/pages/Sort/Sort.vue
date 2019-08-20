@@ -1,7 +1,7 @@
 <template>
   <div id="sortContainer">
     <div class="topBtn">
-      <button class="btn"><i class="iconfont icon-iconset0157"></i>搜索商品,共21577款好物</button>
+      <button @click="$router.push('/search')" class="btn"><i class="iconfont icon-iconset0157"></i>搜索商品,共21577款好物</button>
     </div>
     <div class="sortContent">      
       <ul class="sortList">

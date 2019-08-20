@@ -6,6 +6,7 @@ import Sort from 'pages/Sort/Sort.vue'
 import ShopCar from 'pages/ShopCar/ShopCar.vue'
 import Personal from 'pages/Personal/Personal.vue'
 import Search from 'pages/Search/Search.vue'
+import Login from 'pages/Login/Login.vue'
 
 export default [{
     path:'/msite',
@@ -44,7 +45,11 @@ export default [{
     component:Search,
   },
   {
+    path:'/login',
+    component:Login,
+  },
+  {
     path:'/',
-    redirect:'msite',
+    redirect:'/msite',
   },
 ]
