@@ -5,6 +5,7 @@ import App from './App.vue'
 import router from './router'
 // import 'lib-flexible/flexible'
 // Vue.component(Field.name, Field)
+import store from './store'
 
 import { Button } from 'mint-ui'
 
@@ -15,4 +16,5 @@ Vue.config.productionTip = false
 new Vue({
   render: h => h(App),
   router, //配置路由
+  store,
 }).$mount('#app')

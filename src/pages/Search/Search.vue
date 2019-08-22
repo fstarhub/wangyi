@@ -5,7 +5,7 @@
       <form class="inputText" action="">
         <div class="searchBtn">
           <span class="searchImg"><i class="iconfont icon-sousuo"></i></span> 
-          <input type="text" placeholder="夏季床品 季末特惠">
+          <input v-model="searchInput" @keyup="togo" type="text" placeholder="夏季床品 季末特惠">
         </div>
       </form>
       <span @click="$router.back('/')">取消</span>
@@ -30,7 +30,27 @@
 </template>
 
 <script type="text/ecmascript-6">
+  import {getList}from '../../api'
+  import {mapState} from 'vuex'
   export default {
+
+    data() {
+      return {
+        searchInput:'',//用户输入的内容
+      }
+    },
+   
+    methods: {
+      togo(){
+        this.$store.dispatch('getMessage',{searchInput:this.searchInput})
+      }
+    },
+    computed: {
+      ...mapState({
+        searchContent:state=>state.searchContent
+      })
+    },
+    
   }
 </script>
 

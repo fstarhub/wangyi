@@ -24,7 +24,28 @@
             <li class="tabItem">美食9</li>
           </ul>
         </div>
-        <div class="clickBtn"><i class="iconfont more icon-fangxiang-xiangxia"></i></div>
+        
+        <div class="forDeatil" v-show="showDeatil">
+          <div class="detailTitle">全部频道</div>
+          <ul class="detailShow">
+            <li class="detailItem actived">推荐</li>
+            <li class="detailItem">家具生活</li>
+            <li class="detailItem">服饰鞋包</li>
+            <li class="detailItem">美食美食</li>
+            <li class="detailItem">个护清洁</li>
+            <li class="detailItem">家具生活</li>
+            <li class="detailItem">家具生活</li>
+            <li class="detailItem">家具生活</li>
+            <li class="detailItem">家具生活</li>
+          </ul>
+
+        </div>
+        
+        <div @click="showDeatil=!showDeatil" class="clickBtn">
+          <transition name="myRotate">
+            <i class="iconfont more icon-fangxiang-xiangxia"></i>
+          </transition>
+        </div>
       </div>
     </div>
     <!-- 中间部分 -->
@@ -107,6 +128,11 @@
       
   export default {
 
+    data() {
+      return {
+        showDeatil:false,
+      }
+    },
 
     mounted() {
       
@@ -130,6 +156,13 @@
       click:true
     })
     },
+
+    // methods: {
+    //   toggle(){
+    //     console.log('haha')
+    //     this.showDeatil = !this.showDeatil
+    //   }
+    // },
   }
 </script>
 
@@ -194,13 +227,43 @@
             flex-basis 0
             &.actived
               border-bottom 3px solid red
+      
+      .forDeatil
+        height 160px
+        background white
+        position absolute
+        left 0
+        top 10px
+        .detailTitle
+          height 40px
+          // background red
+          line-height 40px
+          font-size 18px
+          padding-left 10px
+        .detailShow
+          .detailItem
+            font-size 16px
+            float left 
+            border 1px solid gray
+            padding 5px
+            margin-right 6px
+            margin-left 8px
+            width 65px
+            margin-bottom 10px
+            border-radius 5px
+            text-align center
+            background #FAFAFA
+            &.actived
+              color red
+              border 1px solid red
       .clickBtn
         position absolute
-        right 0
+        right -1px
         bottom 0
         height 100%
-        width 70px
+        width 64px
         background white
+      
         .more
           height 40px
           width 40px
@@ -208,8 +271,13 @@
           text-align center
           margin-left 20px
           line-height 40px
-          font-weight bold
-
+          font-weight bold  
+        .myRotate-enter, .myRotate-leave-to
+          transform rotate(180deg)
+        .myRotate-enter-active
+          transition all 1s ease
+        .myRotate-enter-active
+          transition all .5s ease
       
   //中间部分
   .contentContainer
