@@ -19,7 +19,7 @@
       <input type="checkbox">
       <span>我同意《服务条款》和《网易隐私政策》</span>
     </div>
-    <p :add="isRightPhone">其他登录方式></p>
+    <p>其他登录方式></p>
   </div>
 </template>
 
@@ -33,16 +33,11 @@
       return {
         phone:'',//手机号
         pwd:'',//密码
-        // isRightPhone:''
+       
       }
     },
 
-    // computed:{
-    //   isRightPhone(){
-    //     return /^1[34567890]{10}$/.test(this.phone)
-    //   }
-    // },
-
+    
     methods: {
       sendCode(){
         

@@ -15,28 +15,28 @@
     
     <script src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script>
     <script>
-      if ('addEventListener' in document) {
-        document.addEventListener('DOMContentLoaded', function () {
-          FastClick.attach(document.body);
-        }, false);
-      }
+      // if ('addEventListener' in document) {
+      //   document.addEventListener('DOMContentLoaded', function () {
+      //     FastClick.attach(document.body);
+      //   }, false);
+      // }
 
-      document.addEventListener('touchstart',function(event){
-        event.preventDefault();
-      })
+      // document.addEventListener('touchstart',function(event){
+      //   event.preventDefault();
+      // })
 
 
-      var aNodes = document.querySelectorAll('a');
-      for(var i = 0; i < aNodes.length; i++){
-        aNodes[i].addEventListener('touchstart',function(){
-          window.location.href = this.href;
-        })
-      } 
+      // var aNodes = document.querySelectorAll('a');
+      // for(var i = 0; i < aNodes.length; i++){
+      //   aNodes[i].addEventListener('touchstart',function(){
+      //     window.location.href = this.href;
+      //   })
+      // } 
     </script>
 
     <div id="app">
   
-    <script src="./js/rem.js"></script>
+    <!-- <script src="./js/rem.js"></script> -->
     <script src="./js/swiper.min.js"></script>
     
   </body>
